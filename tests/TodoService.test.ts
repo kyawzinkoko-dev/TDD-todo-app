@@ -1,7 +1,7 @@
 
 import { PrismaClient } from "@prisma/client"
-import { TodoRepository } from "../TodoRepo"
-import { TodoService } from "../TodoService"
+import { TodoRepository } from "../src/core/infrastructure/TodoRepo"
+import { TodoService } from "../src/core/usecase/TodoService"
 
 const prisma = new PrismaClient()
 const todoRepo = new TodoRepository(prisma)

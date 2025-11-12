@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { Todo } from "./Todo";
+import { Todo } from "../entity/Todo";
 
 export class TodoRepository{
     constructor(private prisma: PrismaClient) {

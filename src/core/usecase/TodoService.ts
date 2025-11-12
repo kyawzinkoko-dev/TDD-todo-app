@@ -1,5 +1,5 @@
-import { Todo } from "./Todo";
-import { TodoRepository } from "./TodoRepo";
+import { Todo } from "../entity/Todo";
+import { TodoRepository } from "../infrastructure/TodoRepo";
 
 export class TodoService{
     constructor(private TodoRepository: TodoRepository) { }
