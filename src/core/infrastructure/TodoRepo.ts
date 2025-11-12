@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import { Todo } from "../entity/Todo";
+import { ITodoRepository } from "./ITodoRepository";
 
-export class TodoRepository{
+export class TodoRepository implements ITodoRepository{
     constructor(private prisma: PrismaClient) {
         
     }
@@ -31,7 +32,7 @@ export class TodoRepository{
         }
         return new Todo(todo.id,todo.title,todo.description,todo.completed)
     }
-    async delete(id:number): Promise<void |null>{
+    async delete(id:number): Promise<void >{
         await this.prisma.todo.delete({
             where: {
                 id
