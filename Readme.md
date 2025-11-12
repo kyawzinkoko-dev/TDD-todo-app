@@ -1,6 +1,3 @@
-Here’s a clean, simple **Markdown** version you can directly paste into your `README.md` file for GitHub 👇
-
----
 
 #  Test-Driven Development (TDD) with Prisma & Node.js
 
